@@ -1,0 +1,19 @@
+#Run it under Blue Ocean to see the two thread!
+
+
+node {
+stage('Second stage')
+        {
+            def text = 'John'
+            def text2 = 'Bryce'
+            echo "${text} ${text2} has reached the second stage"
+            parallel(
+                 thread1: {
+                    echo "Running thread1"
+                    },
+                 therad2: {
+                    echo "Running thread2"
+                    }
+                )
+        }
+}
