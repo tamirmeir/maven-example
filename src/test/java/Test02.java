@@ -5,6 +5,6 @@ public class Test02 {
 
     @Test public void mytest() {
         String str = "my string";
-	assertEquals("my string1", str);
+	assertEquals("my string", str);
     }
 }
